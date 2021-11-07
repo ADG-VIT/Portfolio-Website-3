@@ -1,0 +1,550 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body{
+  background: #0c0a10;
+  color: #F4F2F8;
+}
+
+/* dark */
+
+body.light{
+  background: #F4F2F8;
+  color: #0c0a10;
+}
+body.light #resume-btn:hover {
+  background: #F4F2F8;
+}
+body.light .label{
+  background-color: #111;
+}
+
+body.light .label .ball{
+  background-color: #F4F2F8;
+}
+
+body.light .footer-heading a{
+    color: black;
+  }
+  
+body.light #footer-email{
+    background-color: #F4F2F8;
+    color: #000;
+  }
+  
+body.light #footer-email::-webkit-input-placeholder{
+    color: #000;
+  }
+
+body.light #footer-email-btn:hover{
+    background-color: #F4F2F8;
+  } 
+body.light .footer-heading a:hover {
+    color: #652cdf;
+  }
+  /* toggle */
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+
+}
+
+.label {
+    background-color: #f4f2f8;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  float: right;
+  right: 2rem;
+  top: 1rem;
+}
+
+.label .ball {
+    background-color: #0C0A10;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+.fa-moon {
+    color: #f1c40f;
+}
+.fa-sun {
+    color: #f39c12;
+}
+
+/* skills */
+
+.professional-skills{
+  display: grid;
+  height: 100%;
+  margin: 0 auto;
+}
+.skill-bars{
+  padding: 3.2rem 0;
+  width:80%;
+  margin: 0 auto;
+}
+.skill-heading{
+  font-family: Poppins;
+  font-size: 250%;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  align-items: left;
+
+}
+.skill-bars .bar{
+  margin: 1rem 0;
+  float: left;
+  width: 50%;
+  font-family: Inter;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+.skill-bars .bar .info{
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+color: #7A797C;
+
+}
+.skill-bars .bar .info span{
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1rem;
+
+}
+.skill-bars .bar .percent-bar{
+  width: 90%;
+  background: #ddd;
+  border-radius: 0 2px 2px 0;
+
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 98%;
+  background: #652CDF;
+
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 0 10px 10px 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px #652CDF;
+  -webkit-animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+          animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.skill-bars .bar .progress-line-photoshop{
+width: 58%;
+height: 10px;
+  background: #652CDF;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 0 10px 10px 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px #652CDF;
+  -webkit-animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+          animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+}
+.skill-bars .bar .progress-line-js{
+  width: 48%;
+  height: 10px;
+    background: #652CDF;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 0 10px 10px 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px #652CDF;
+    -webkit-animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+            animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+  }
+.skill-bars .bar .progress-line-figma{
+    width: 88%;
+    height: 10px;
+      background: #652CDF;
+      position: relative;
+      transform: scaleX(0);
+      transform-origin: left;
+      border-radius: 0 10px 10px 0;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                  0 1px #652CDF;
+      -webkit-animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+              animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    
+  }
+.skill-bars .bar .progress-line-html{
+      width: 88%;
+      height: 10px;
+        background: #652CDF;
+        position: relative;
+        transform: scaleX(0);
+        transform-origin: left;
+        border-radius: 0 10px 10px 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                    0 1px #652CDF;
+        -webkit-animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+                animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+.skill-bars .bar .progress-line-python{
+        width: 25%;
+        height: 10px;
+          background: #652CDF;
+          position: relative;
+          transform: scaleX(0);
+          transform-origin: left;
+          border-radius: 0 10px 10px 0;
+          box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                      0 1px #652CDF;
+          -webkit-animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+                  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+.skill-bars .bar .progress-line-css{
+          width: 69%;
+          height: 10px;
+            background: #652CDF;
+            position: relative;
+            transform: scaleX(0);
+            transform-origin: left;
+            border-radius: 0 10px 10px 0;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                        0 1px #652CDF;
+            -webkit-animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+                    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+.percent-number{
+  margin-right: 3.4rem;
+}
+
+@-webkit-keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+#resume-btn {
+  width: 14.2rem;
+  background-color: #652cdf;
+  color: white;
+  border-radius: 7px;
+margin-top: 1.75rem;
+  height: 2.5rem;
+  outline: none;
+  border-style: none;
+  font-weight: 500;
+  font-family: Inter;
+  font-size: 1rem;
+  float: right;
+  margin-right: 0%;
+  text-transform: uppercase;
+}
+
+#resume-btn:hover {
+  cursor: pointer;
+  background-color: #0c0a10;
+  color: #652cdf;
+  transition: all 0.3s ease-in-out;
+  border-style: solid;
+  border-color: #652cdf;
+  border-width: 3px;
+}
+
+
+/* footer */
+
+.footer-container {
+  padding: 4rem 0 2rem 0;
+}
+
+.footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  /* margin-right: 5rem; */
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.footer-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-heading a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.footer-1 a {
+  margin-bottom: 1.2rem;
+}
+
+.footer-2 a {
+  margin-bottom: 1.2rem;
+}
+.footer-heading a:hover {
+  color: #652cdf;
+  transition: 0.3s ease-out;
+}
+.copyright {
+  color: #858487;
+  font-size: 0.8rem;
+}
+
+#footer-email {
+  width: 220px;
+  border-radius: 7px 0 0 7px;
+  height: 43px;
+  outline: none;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #652cdf;
+  font-weight: 500;
+  font-family: Inter;
+  font-size: 1rem;
+  background-color: #0c0a10;
+  color: white;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.fa {
+  padding-right: 0.7rem;
+}
+
+#footer-email::-webkit-input-placeholder {
+  padding-left: 11px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Inter;
+  color: white;
+}
+
+#footer-email::-moz-placeholder {
+  padding-left: 11px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Inter;
+  color: white;
+}
+
+#footer-email:-ms-input-placeholder {
+  padding-left: 11px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Inter;
+  color: white;
+}
+
+#footer-email::-ms-input-placeholder {
+  padding-left: 11px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Inter;
+  color: white;
+}
+
+#footer-email::placeholder {
+  padding-left: 11px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Inter;
+  color: white;
+}
+
+#footer-email-btn {
+  width: 123px;
+  background-color: #652cdf;
+  color: white;
+  border-radius: 0 7px 7px 0;
+  margin-left: -7px;
+  height: 43px;
+  outline: none;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #652cdf;
+  font-weight: 500;
+  font-family: Inter;
+  font-size: 1rem;
+}
+
+#footer-email-btn:hover {
+  cursor: pointer;
+  background-color: #0c0a10;
+  color: #652cdf;
+  transition: all 0.3s ease-in-out;
+  border-style: solid;
+  border-color: #652cdf;
+  border-width: 3px;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer-email {
+    margin-top: 4rem;
+  }
+  .percent-number{
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .footer-3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .percent-number{
+    margin-right: 2.5rem;
+  }
+
+  #footer-email-btn {
+    margin-bottom: 2rem;
+  }
+  .stay {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .percent-number{
+    margin-right: 2.6rem;
+  }
+}
+
+
+@media screen and (max-width: 870px) {
+  .percent-number{
+    margin-right: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .percent-number{
+    margin-right: 0rem;
+  }
+  .skill-bars .bar{
+    width: 100%;
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+  }
+  .skill-bars .bar .percent-bar{
+    width: 100%;
+
+    border-radius: 0 2px 2px 0;
+  
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .footer,
+  .footer-heading .footer-2 {
+    align-items: center;
+    justify-content: center;
+  }
+  .percent-number{
+    margin-right: 0rem;
+  }
+
+  h4 {
+    margin-top: 4rem;
+  }
+
+  .stay {
+    margin-top: 4rem;
+  }
+  #footer-email-btn {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  #footer-email {
+    width: 100%;
+    border-radius: 7px;
+  }
+
+  .percent-number{
+    margin-right: 0rem;
+  }
+  #footer-email-btn {
+    border-radius: 7px;
+    margin: 1rem auto 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  #footer-email::-webkit-input-placeholder {
+    font-size: 0.7rem;
+  }
+  #footer-email::-moz-placeholder {
+    font-size: 0.7rem;
+  }
+  #footer-email:-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+  #footer-email::-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+  .footer-heading,
+  h4,
+  .copyright,
+  #footer-email::placeholder,
+  #footer-email-btn {
+    font-size: 0.7rem;
+  }
+
+  .percent-number{
+    margin-right: 0rem;
+  }
+}

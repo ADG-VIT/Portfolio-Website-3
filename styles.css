@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  color: white;
+}
+.Home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  display: none;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+
+  /* padding: 10px 40px 0px; */
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  z-index: 1;
+  /* Changed position and width for fullpage.js */
+  position: fixed;
+
+  width: 1079px;
+  height: 44px;
+  left: 101px;
+  top: 40px;
+}
+/* .nav-logo
+{
+  margin: 10px;
+  width: auto;
+  height: 7vh;
+  left: -13px;
+  top: -9px;
+  clip: rect(0px,20px,0px,0px);
+}
+.nav-logo-2
+{
+  display: none;
+} */
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 24px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  letter-spacing: 0.06em;
+  line-height: 29px;
+  text-decoration: none;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  transition: color 0.1s;
+}
+.nav-links ul li a:hover {
+  color: rgb(36, 85, 243);
+}
+nav .fa {
+  display: none;
+}
+.navbar-image {
+  display: none;
+}
+/* responsive_code_nav_bar*/
+@media (max-width: 1291px) {
+  /* .nav-logo-2
+{ 
+  margin: 25px;
+  margin-left: 0px;
+  width: auto;
+  height: 7vh;
+  left: -10.43px;
+  top: -7.22px;
+  display: block;
+ 
+} */
+  .nav-links ul li {
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: #111111;
+    background-image: url("./assets/navbar_background_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 400px;
+    top: 0;
+    right: -400px;
+    text-align: left;
+    z-index: 2;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 20px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 40px;
+    line-height: 29px;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-links ul li a {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-links ul li a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 770px) {
+  .nav-links ul li {
+    display: block;
+    padding-bottom: 30px;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: #111111;
+    background-image: url("./assets/navbar_background_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 317px;
+    top: 0;
+    right: -317px;
+    text-align: left;
+    z-index: 2;
+    line-height: 29px;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 20px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .nav-links ul li {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .nav-links ul li a {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: #111111;
+    background-image: url("./assets/navbar_background_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    line-height: 29px;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 20px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 10px;
+  }
+}
+.fullpage-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* portfolio section */
+.Home .border {
+  position: fixed;
+
+  /*border: 3px solid rgb(63, 63, 63);*/
+  width: 100%;
+  height: 100vh;
+  margin-left: 40px;
+  margin-top: 20px;
+  box-sizing: border-box;
+
+  background-image: url("homepagepic.png");
+  background-repeat: no-repeat;
+}
+
+.name {
+  font-size: 60px;
+  margin-top: 200px;
+  margin-left: 180px;
+}
+.con2 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 180px;
+  font-weight: 100;
+}
+.content a {
+  position: fixed;
+  left: 220px;
+  display: inline-block;
+  background: rgb(36, 85, 243);
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 30px;
+
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid rgb(84, 122, 247);
+  transition: all 0.3s ease;
+}
+.content a:hover {
+  color: rgb(84, 122, 247);
+  background: none;
+}
+.fa {
+  padding: 10px;
+  font-size: 22px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.fa:hover {
+  color: rgb(84, 122, 247);
+}
+.fa-behance {
+  position: fixed;
+  top: 280px;
+  left: 80px;
+}
+.fa-instagram {
+  position: fixed;
+  top: 320px;
+  left: 80px;
+}
+.fa-pinterest {
+  position: fixed;
+  top: 360px;
+  left: 80px;
+}
+.vl1 {
+  position: fixed;
+  top: 150px;
+  left: 110px;
+  border: 0.5px solid white;
+  height: 120px;
+}
+.vl2 {
+  position: fixed;
+  top: 400px;
+  left: 110px;
+  border: 0.5px solid white;
+  height: 120px;
+}
+
+/*About page*/
+#About {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  align-items: center;
+}
+.About h2 {
+  align-items: center;
+  font-size: 30px;
+}
+
+.About .About-content .left {
+  width: 45%;
+}
+.About .About-content .left img {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  height: 330px;
+  width: 330px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.txt-name {
+  font-size: 40px;
+  position: fixed;
+  bottom: 120px;
+  left: 80px;
+  color: rgb(252, 252, 252);
+}
+
+.About .About-content .right .text {
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  position: fixed;
+  bottom: 30px;
+  left: 80px;
+  color: rgb(175, 174, 174);
+}
+
+.About .img2 {
+  width: 450px;
+  height: 400vh;
+  position: fixed;
+  right: 10px;
+  top: 110px;
+}
+.About .img3 {
+  position: fixed;
+  bottom: 60px;
+  right: 410px;
+}
