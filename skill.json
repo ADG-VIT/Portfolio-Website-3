@@ -1,0 +1,63 @@
+[
+    {
+        "id" : "01",
+        "title" : "Photoshop",
+        "per_num" : "58%",
+        "custom_class" : "photoshop"
+    },
+    {
+        "id" : "02",
+        "title" : "js",
+        "per_num" : "48%",
+        "custom_class" : "js"
+    },
+    {
+        "id" : "03",
+        "title" : "HTML",
+        "per_num" : "88%",
+        "custom_class" : "html"
+    },
+    {
+        "id" : "04",
+        "title" : "CSS",
+        "per_num" : "98%",
+        "custom_class" : "css"
+    },
+    {
+        "id" : "05",
+        "title" : "C",
+        "per_num" : "78%",
+        "custom_class" : "C"
+    },
+    {
+        "id" : "06",
+        "title" : "Python",
+        "per_num" : "58%",
+        "custom_class" : "python"
+    },
+    {
+        "id" : "07",
+        "title" : "Figma",
+        "per_num" : "28%",
+        "custom_class" : "Figma"
+    },
+    {
+        "id" : "08",
+        "title" : "Video-Editing",
+        "per_num" : "18%",
+        "custom_class" : "Video-Editing"
+    },
+    {
+        "id" : "07",
+        "title" : "Figmaaa",
+        "per_num" : "28%",
+        "custom_class" : "Figmaaa"
+    },
+    {
+        "id" : "08",
+        "title" : "Video-Editinggg",
+        "per_num" : "18%",
+        "custom_class" : "Video-Editingggg"
+    }
+
+]

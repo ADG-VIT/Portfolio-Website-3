@@ -33,3 +33,37 @@ function scrollHeader(){
     if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+
+
+
+var experience = document.querySelector(".experience");
+
+fetch("./experience.json")
+    .then((res)=>{return res.json()})
+    .then((data)=>{
+        data.map((item)=>{
+            experience.innerHTML +=  '    <div class= "exp-main"><div class= "exp-num">'+item.id+'</div><div class="exp-details"><div class= "exp-title">'+item.title+'</div><div class="exp-subtitle">'+item.subtitle+' <br> '+item.break+'</div><div class= "exp-des">'+item.info+'</div></div></div>';
+        })
+    })
+
+
+    var skill = document.querySelector(".division");
+var style= document.createElement("style")
+
+
+
+fetch("./skill.json")
+    .then((res)=>{return res.json()})
+    .then((data)=>{
+        data.map((item)=>{
+        style.innerHTML+='.skill-bars .bar .'+item.custom_class+' {width: '+item.per_num+'; height: 10px;background: #652cdf;position: relative;transform: scaleX(0);transform-origin: left;border-radius: 0 10px 10px 0;box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px #652cdf;-webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;}'
+
+            skill.innerHTML +=  '<div class="bar" data-aos="flip-left"><div class="info"><span>'+item.title+'</span><div class="percent-number">'+item.per_num+'</div></div><div class="percent-bar"><div class='+item.custom_class+'></div></div></div>';
+        })
+        // style.type='text/css';
+        document.head.appendChild(style);
+        
+    })
+
+
