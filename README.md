@@ -10,10 +10,22 @@ Make your personal website using the template
 ---
 ## How to Use?
 - Go to folder add your image to put into the website.
-- You can update your data like projects, experience and many others using the JSON File present in it.
+- You can update the contents like portfolio,skills, experience using the JSON File 
 
-## How to Deploy?
-Include the steps to host on github pages with custom domain
+## Sections 
+- Home 
+- About me 
+- Portfolio 
+- Skills 
+- Experience 
+- Resume 
+- Contact 
+
+
+## How to run the project ?
+- Fork the repository 
+- Clone your forked repository 
+- Build your code 
 
 ## Tech Stack Used
 - HTML
