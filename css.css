@@ -198,11 +198,16 @@ body.light .footer-heading a:hover {
 }
 .fa-moon {
   color: #f1c40f;
-  padding-left: 15px;
+  width: 1rem;
+  font-size: 0.73rem;
+  /* margin-left: 1rem; */
+  /* margin-left: 1rem; */
 }
 .fa-sun {
   color: #f39c12;
-  padding-right: 25px;
+  margin-left: -1.1rem;
+  font-size: 0.73rem;
+  /* padding-right: 20px; */
 }
 
 /*=============== NAV ===============*/
@@ -454,8 +459,6 @@ h2 {
   margin: 0 auto;
 }
 .skill-bars {
-  /* height: 100%; */
-  /* padding: 3.2rem 0; */
   width: 90%;
   margin: 0 auto;
 }
@@ -533,7 +536,7 @@ h2 {
   font-family: Inter;
   font-size: 1rem;
   float: right;
-  margin-right: 0%;
+  margin-right: 4.5%;
   text-transform: uppercase;
 }
 
@@ -773,9 +776,6 @@ h4 {
 
 /*=============== MEDIA QUERIES ===============*/
 
-/*=============== MEDIA QUERIES ===============*/
-/* For small devices */
-/* Remove if you choose, the minimalist design */
 @media screen and (max-width: 320px) {
   .nav__name {
     display: none;
@@ -826,16 +826,6 @@ h4 {
     display: none;
   }
 
-  /* First design, remove if you choose the minimalist design */
-  /* .active-link::before {
-        content: '';
-        position: absolute;
-        bottom: -.5rem;
-        width: 4px;
-        height: 4px;
-        background-color: var(--first-color);
-        border-radius: 50%;
-      } */
 }
 
 @media screen and (min-width: 797px) {
@@ -862,21 +852,6 @@ h4 {
     color: var(--first-color);
   }
 
-  /* First design, remove if you choose the minimalist design */
-  /* .active-link::before {
-      content: '';
-      position: absolute;
-      bottom: -0.5rem;
-      width: 4px;
-      height: 4px;
-      background-color: var(--first-color);
-      border-radius: 50%;
-    } */
-
-  /* Minimalist design */
-  /* .active-link::before{ 
-        bottom: -.75rem;
-    } */
 }
 
 /* For large devices */
