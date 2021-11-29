@@ -52,8 +52,8 @@ img {
 }
 
 body {
-  background: #0c0a10;
-  color: #f4f2f8;
+  background: #f4f2f8;
+  color: #0c0a10;
 }
 
 ul {
@@ -98,66 +98,91 @@ a {
   padding-left: 25px;
 }
 
-body.light {
-  background: #f4f2f8;
-  color: #0c0a10;
+body.dark {
+  background: #0c0a10;
+  color: #f4f2f8;
 }
-
-body.light .name {
-  color: black;
+body.dark #resume-btn:hover {
+  background: #0c0a10;
 }
-body.light .txt-type {
-  color: rgba(27, 27, 27, 0.938);
-}
-body.light .fa-behance {
-  color: black;
-}
-body.light .fa-instagram {
-  color: black;
-}
-body.light .fa-pinterest {
-  color: black;
-}
-body.light .fa:hover {
-  color: #652cdf;
-}
-body.light .vl1 {
-  border: 0.5px solid black;
-}
-body.light .vl2 {
-  border: 0.5px solid black;
-}
-
-body.light #resume-btn:hover {
-  background: #f4f2f8;
-}
-body.light .label {
-  background-color: #111;
-}
-
-body.light .label .ball {
+body.dark .label {
   background-color: #f4f2f8;
 }
 
-body.light .footer-heading a {
-  color: black;
+body.dark .label .ball {
+  background-color: #0c0a10;
 }
 
-body.light #footer-email {
-  background-color: #f4f2f8;
+body.dark .footer-heading a {
+  color: #fff;
+}
+
+body.dark #footer-email {
+  background-color: #0c0a10;
+  color: #fff;
+}
+
+body.dark #footer-email::-webkit-input-placeholder {
   color: #000;
 }
 
-body.light #footer-email::-webkit-input-placeholder {
-  color: #000;
+body.dark #footer-email-btn:hover {
+  background-color: #0c0a10;
 }
-
-body.light #footer-email-btn:hover {
-  background-color: #f4f2f8;
-}
-body.light .footer-heading a:hover {
+body.dark .footer-heading a:hover {
   color: #652cdf;
 }
+
+body.dark .exp-title {
+  color: #fff;
+}
+
+body.dark .experience {
+  color: #7a797c;
+}
+
+body.dark .active-link {
+  color: #652cdf;
+}
+body.dark .skill-bars .bar .progress-line {
+  background: #652cdf;
+}
+body.dark #resume-btn {
+  background-color: #652cdf;
+}
+body.dark #resume-btn:hover {
+  color: #652cdf;
+  border-color: #652cdf;
+}
+
+body.dark .footer-heading a:hover {
+  color: #652cdf;
+}
+body.dark #footer-email {
+  border-color: #652cdf;
+}
+body.dark #footer-email::-moz-input-placeholder {
+  color: white;
+}
+body.dark #footer-email::-webkit-input-placeholder {
+  color: white;
+}
+body.dark #footer-email::-ms-input-placeholder {
+  color: white;
+}
+body.dark #footer-email::placeholder {
+  color: white;
+}
+body.dark #footer-email-btn {
+  background-color: #652cdf;
+  border-color: #652cdf;
+}
+
+body.dark #footer-email-btn:hover {
+  color: #652cdf;
+  border-color: #652cdf;
+}
+
 /* toggle */
 
 .checkbox {
@@ -166,7 +191,7 @@ body.light .footer-heading a:hover {
 }
 
 .label {
-  background-color: #f4f2f8;
+  background-color: #0c0a10;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -182,7 +207,7 @@ body.light .footer-heading a:hover {
 }
 
 .label .ball {
-  background-color: #0c0a10;
+  background-color: #f4f2f8;
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -252,20 +277,10 @@ body.light .footer-heading a:hover {
 /*Active link*/
 .active-link {
   position: relative;
-  color: #652cdf;
+  color: #3705a0;
   transition: 0.3s;
 }
 
-/* Minimalist design, active link */
-/* .active-link::before{
-    content: '';
-    position: absolute;
-    bottom: -.5rem;
-    width: 4px;
-    height: 4px;
-    background-color: var(--first-color);
-    border-radius: 50%;
-  } */
 
 /* Change background header */
 .scroll-header {
@@ -289,8 +304,13 @@ body.light .footer-heading a:hover {
   position: absolute;
   bottom: 130px;
   left: 230px;
+  color:black;
+}
+
+body.dark .name{
   color: white;
 }
+
 .txt-type {
   font-size: 35px;
   position: absolute;
@@ -303,7 +323,7 @@ body.light .footer-heading a:hover {
   left: 230px;
   display: inline-block;
   background: #652cdf;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 25px;
   padding: 12px 36px;
   font-weight: 400;
@@ -311,51 +331,85 @@ body.light .footer-heading a:hover {
   border: 2px solid #652cdf;
   transition: all 0.3s ease;
 }
+
+body.dark .content a{
+  color: black;
+}
+
 .content a:hover {
   color: #652cdf;
   background: none;
 }
-.fa {
+
+.fa:hover {
+  color: #652cdf;
+}
+.fa-behance {
+  color: black;
+  position: absolute;
+  top: 280px;
+  left: 90px;
   padding: 10px;
   font-size: 22px;
   width: 40px;
   text-align: center;
   text-decoration: none;
 }
-.fa:hover {
-  color: #652cdf;
-}
-.fa-behance {
+
+body.dark .fa-behance{
   color: white;
-  position: absolute;
-  top: 280px;
-  left: 90px;
 }
-.fa-instagram {
+
+body.dark .instagramm .fa-instagram{
+  color: white;
+}
+body.dark .fa-pinterest {
+  color: white;
+}
+.instagramm .fa-instagram {
   text-decoration: none;
-  color: white;
+  color: black;
   position: absolute;
   top: 320px;
   left: 90px;
+  padding: 10px;
+  font-size: 22px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
 }
 .fa-pinterest {
-  color: white;
+  color: black;
   position: absolute;
   top: 360px;
   left: 90px;
+  padding: 10px;
+  font-size: 22px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
 }
 .vl1 {
   position: absolute;
   top: 140px;
   left: 110px;
-  border: 0.5px solid white;
+  border: 0.5px solid black;
   height: 140px;
 }
+
+body.dark .vl1{
+border-color:#fff;
+}
+
+body.dark .vl2{
+  border-color:#fff;
+  }
+
 .vl2 {
   position: absolute;
   top: 410px;
   left: 110px;
-  border: 0.5px solid white;
+  border: 0.5px solid black;
   height: 140px;
 }
 
@@ -458,7 +512,7 @@ h2 {
 }
 .skill-heading {
   font-family: Poppins;
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   align-items: left;
@@ -490,13 +544,13 @@ h2 {
 .skill-bars .bar .progress-line {
   height: 10px;
   width: 98%;
-  background: #652cdf;
+  background: #3705a0;
 
   position: relative;
   transform: scaleX(0);
   transform-origin: left;
   border-radius: 0 10px 10px 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px #652cdf;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px #3705a0;
   -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
@@ -519,7 +573,7 @@ h2 {
 
 #resume-btn {
   width: 14.2rem;
-  background-color: #652cdf;
+  background-color: #3705a0;
   color: white;
   border-radius: 7px;
   margin-top: 1.75rem;
@@ -536,22 +590,15 @@ h2 {
 
 #resume-btn:hover {
   cursor: pointer;
-  background-color: #0c0a10;
-  color: #652cdf;
+  background-color: #f4f2f8;
+  color: #3705a0;
   transition: all 0.3s ease-in-out;
   border-style: solid;
-  border-color: #652cdf;
+  border-color: #3705a0;
   border-width: 3px;
 }
 
 /* Experience */
-body.light .exp-title {
-  color: #000;
-}
-
-body.light .experience {
-  color: #7a797c;
-}
 
 .exp-heading {
   font-family: Poppins;
@@ -564,6 +611,7 @@ body.light .experience {
     margin-bottom: 1.5rem; */
   align-items: left;
   /* padding: 4rem 5rem 2rem; */
+  align-items: left;
 }
 
 .experience {
@@ -577,7 +625,7 @@ body.light .experience {
 .exp-main {
   display: flex;
   /* flex-direction: column; */
-  padding: 2rem 6rem;
+  padding: 2rem 5rem;
   width: 50%;
 }
 
@@ -598,7 +646,7 @@ body.light .experience {
   font-weight: 600;
   font-size: 2.2rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #000;
 }
 
 .exp-subtitle {
@@ -623,11 +671,11 @@ body.light .experience {
 
 /* footer */
 .footer-container {
-  padding: 4rem 0 2rem 0;
+  padding: 4rem 0 1rem 0;
 }
 
 .footer-height {
-  height: 75vh;
+  margin-bottom: 7rem;
 }
 
 .footer {
@@ -657,7 +705,7 @@ body.light .experience {
 
 .footer-heading a {
   text-decoration: none;
-  color: white;
+  color: black;
   margin-bottom: 0.5rem;
 }
 
@@ -669,9 +717,10 @@ body.light .experience {
   margin-bottom: 1.2rem;
 }
 .footer-heading a:hover {
-  color: #652cdf;
+  color: #3705a0;
   transition: 0.3s ease-out;
 }
+
 .copyright {
   color: #858487;
   font-size: 0.8rem;
@@ -684,12 +733,12 @@ body.light .experience {
   outline: none;
   border-style: solid;
   border-width: 3px;
-  border-color: #652cdf;
+  border-color: #3705a0;
   font-weight: 500;
   font-family: Inter;
   font-size: 1rem;
-  background-color: #0c0a10;
-  color: white;
+  background-color: #f4f2f8;
+  color: black;
 }
 
 h4 {
@@ -707,7 +756,7 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
   font-family: Inter;
-  color: white;
+  color: black;
 }
 
 #footer-email::-moz-placeholder {
@@ -715,15 +764,7 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
   font-family: Inter;
-  color: white;
-}
-
-#footer-email:-ms-input-placeholder {
-  padding-left: 11px;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: Inter;
-  color: white;
+  color: black;
 }
 
 #footer-email::-ms-input-placeholder {
@@ -731,7 +772,7 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
   font-family: Inter;
-  color: white;
+  color: black;
 }
 
 #footer-email::placeholder {
@@ -739,12 +780,12 @@ h4 {
   font-size: 1rem;
   font-weight: 500;
   font-family: Inter;
-  color: white;
+  color: black;
 }
 
 #footer-email-btn {
   width: 123px;
-  background-color: #652cdf;
+  background-color: #3705a0;
   color: white;
   border-radius: 0 7px 7px 0;
   margin-left: -7px;
@@ -752,7 +793,7 @@ h4 {
   outline: none;
   border-style: solid;
   border-width: 3px;
-  border-color: #652cdf;
+  border-color: #3705a0;
   font-weight: 500;
   font-family: Inter;
   font-size: 1rem;
@@ -760,87 +801,77 @@ h4 {
 
 #footer-email-btn:hover {
   cursor: pointer;
-  background-color: #0c0a10;
-  color: #652cdf;
+  background-color: #f4f2f8;
+  color: #3705a0;
   transition: all 0.3s ease-in-out;
   border-style: solid;
-  border-color: #652cdf;
+  border-color: #3705a0;
   border-width: 3px;
 }
 
 /*=============== MEDIA QUERIES ===============*/
+@media screen and (min-width: 1280px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-email {
+    margin-top: 4rem;
+  }
+  .percent-number {
+    margin-right: 3rem;
+  }
 
-/*=============== MEDIA QUERIES ===============*/
-/* For small devices */
-/* Remove if you choose, the minimalist design */
-@media screen and (max-width: 320px) {
-  .nav__name {
-    display: none;
+  .skill-bars {
+    margin-left: 4.8rem;
+  }
+
+  #resume-btn {
+    margin-right: 4%;
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+  .footer-2 {
+    margin-left: 1rem;
+  }
+  .footer-3 {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-email {
+    margin-top: 4rem;
+  }
+  .percent-number {
+    margin-right: 3rem;
+  }
+
+  .skill-bars {
+    margin-left: 4.8rem;
+  }
+
+  #resume-btn {
+    margin-right: 4%;
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+  .footer-2 {
+    margin-left: 1rem;
+  }
+  .footer-3 {
+    margin-left: 1rem;
   }
 }
 
-/* For medium devices */
-@media screen and (min-width: 576px) {
-  .nav__list {
-    justify-content: center;
-    column-gap: 3rem;
-  }
-}
-
-@media screen and (max-width: 797px) {
-  .nav__menu {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: var(--container-color);
-    box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
-    width: 100%;
-    height: 4rem;
-    padding: 0 1rem;
-    display: grid;
-    align-content: center;
-    border-radius: 1.25rem 1.25rem 0 0;
-    transition: 0.4s;
-  }
-
-  .theme {
-    position: fixed;
-    right: 0;
-    transition: 0.4s;
-  }
-  .nav__link:hover {
-    color: var(--first-color);
-  }
-
-  .About {
-    position: absolute;
-    left: 40px;
-  }
-  .About .img2 {
-    display: none;
-  }
-  .About .img3 {
-    display: none;
-  }
-
-  /* First design, remove if you choose the minimalist design */
-  /* .active-link::before {
-        content: '';
-        position: absolute;
-        bottom: -.5rem;
-        width: 4px;
-        height: 4px;
-        background-color: var(--first-color);
-        border-radius: 50%;
-      } */
-}
-
-@media screen and (min-width: 797px) {
-  body {
-    margin: 0;
-  }
+@media screen and (min-width: 768px) {
   .section {
-    padding: 7rem 0 2rem;
+    padding: 4rem 0 2rem;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
@@ -858,42 +889,18 @@ h4 {
   .nav__link:hover {
     color: var(--first-color);
   }
+  .nav__list {
+    column-gap: 3rem;
+  }
 
-  /* First design, remove if you choose the minimalist design */
-  /* .active-link::before {
-      content: '';
-      position: absolute;
-      bottom: -0.5rem;
-      width: 4px;
-      height: 4px;
-      background-color: var(--first-color);
-      border-radius: 50%;
-    } */
-
-  /* Minimalist design */
-  /* .active-link::before{ 
-        bottom: -.75rem;
-    } */
-}
-
-/* For large devices */
-@media screen and (min-width: 1024px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
+  .label {
+    position: fixed;
+    right: 5%;
+    top: 2.1%;
   }
 }
 
-@media screen and (max-width: 1280px) {
-  .footer-email {
-    margin-top: 4rem;
-  }
-  .percent-number {
-    margin-right: 3rem;
-  }
-}
-
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 990px) {
   .footer-3 {
     display: block;
     margin-left: auto;
@@ -909,17 +916,27 @@ h4 {
   .stay {
     margin-top: 2.5rem;
   }
-}
 
-@media screen and (max-width: 1070px) {
-  .percent-number {
-    margin-right: 2.6rem;
+  .skill-bars {
+    margin-left: 4.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .exp-main {
+    padding: 2rem 4rem;
+  }
+
+  #resume-btn {
+    margin-right: 5%;
+  }
+  .nav__list {
+    column-gap: 3rem;
   }
 }
 
 @media screen and (max-width: 870px) {
-  .percent-number {
-    margin-right: 1.8rem;
+  .nav__list {
+    column-gap: 1.9rem;
   }
   .experience {
     flex-direction: column;
@@ -927,11 +944,77 @@ h4 {
   }
   .exp-main {
     width: 100%;
-    margin-right: 6rem;
+    margin-left: 0rem;
+    padding: 2rem 4rem;
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--container-color);
+    box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    display: grid;
+    align-content: center;
+    border-radius: 1.25rem 1.25rem 0 0;
+    transition: 0.4s;
+  }
+  .nav__list {
+    justify-content: center;
+    column-gap: 3.8rem;
+  }
+
+  .theme {
+    position: fixed;
+    right: 0;
+    transition: 0.4s;
+  }
+  .nav__link:hover {
+    color: var(--first-color);
+  }
+
+  .skill-bars {
+    padding-left: 40px;
+  }
+  .exp-main {
+    padding: 2rem 4rem;
+  }
+  .skill-bars {
+    margin-left: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .label {
+    margin: 0 10px 0 5px;
+  }
+
+  h1 {
+    position: relative;
+    left: -12%;
+  }
+
+  .exp-main {
+    margin-left: 1rem;
+    padding: 2rem 2rem;
+  }
+  /* skills */
+  #skill {
+    padding-left: 10px;
+  }
+  .skill-bars {
+    padding-left: 10px;
+    margin-left: 2rem;
+  }
+  #resume-btn {
+    margin: 1.75rem auto 0;
+  }
+
   .percent-number {
     margin-right: 0rem;
   }
@@ -944,34 +1027,30 @@ h4 {
   }
   .skill-bars .bar .percent-bar {
     width: 100%;
-
     border-radius: 0 2px 2px 0;
   }
-}
 
-@media screen and (max-width: 519px) {
-  .footer,
-  .footer-heading .footer-2 {
-    align-items: center;
-    justify-content: center;
+  /* footer */
+  #footer-email::-webkit-input-placeholder {
+    font-size: 1rem;
   }
-  .percent-number {
-    margin-right: 0rem;
+  #footer-email::-moz-placeholder {
+    font-size: 1rem;
   }
-
-  h4 {
-    margin-top: 4rem;
+  #footer-email:-ms-input-placeholder {
+    font-size: 1rem;
   }
-
-  .stay {
-    margin-top: 4rem;
+  #footer-email::-ms-input-placeholder {
+    font-size: 1rem;
   }
+  .footer-heading,
+  h4,
+  .copyright,
+  #footer-email::placeholder,
   #footer-email-btn {
-    margin-bottom: 1rem;
+    font-size: 1rem;
   }
-}
 
-@media screen and (max-width: 488px) {
   #footer-email {
     width: 100%;
     border-radius: 7px;
@@ -986,31 +1065,105 @@ h4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 4em;
+  }
+
+  .nav__list {
+    justify-content: center;
+    column-gap: 1.8rem;
+  }
+
+  .footer,
+  .footer-heading .footer-2 {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-2 {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  .percent-number {
+    margin-right: 0rem;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+
+  .stay {
+    margin-top: 4rem;
+  }
+
+  .copyright {
+    position: relative;
+    bottom: 10%;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    padding: 4rem 0px 0rem 17px;
   }
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 400px) {
+  .nav__name {
+    display: none;
+  }
+  .nav__list {
+    justify-content: center;
+    column-gap: 2rem;
+  }
+
+  h1 {
+    left: -21%;
+  }
+  .exp-main {
+    margin-right: 5rem;
+    padding: 1.5rem 1rem;
+  }
+  .exp-heading {
+    font-size: 2rem;
+  }
+  .exp-num {
+    font-size: 1.7rem;
+  }
+  .exp-subtitle {
+    font-size: 1.3rem;
+  }
+  .exp-title {
+    font-size: 1.7rem;
+  }
   #footer-email::-webkit-input-placeholder {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   #footer-email::-moz-placeholder {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   #footer-email:-ms-input-placeholder {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   #footer-email::-ms-input-placeholder {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .footer-heading,
   h4,
   .copyright,
   #footer-email::placeholder,
   #footer-email-btn {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .percent-number {
     margin-right: 0rem;
+  }
+
+  .footer-container {
+    height: 100vh;
+    width: 100%;
+  }
+  .footer-2 {
+    padding-top: 45px;
+    /* padding-bottom: 10px; */
   }
 }
